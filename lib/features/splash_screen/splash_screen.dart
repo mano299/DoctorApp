@@ -1,3 +1,4 @@
+import 'package:doctor_app/features/splash_screen/splash_screen_body.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -5,6 +6,6 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SplashScreenBody();
   }
 }

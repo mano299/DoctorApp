@@ -1,16 +1,21 @@
-import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreenBody extends StatelessWidget {
   const SplashScreenBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        SvgPicture.asset(Assets.assetsImagesOnBoardingBg),
-      ],
+    return Scaffold(
+      body: Stack(
+        children: [
+          Image.asset(
+            'assets/images/01_Splash screen.png',
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
+          )
+        ],
+      ),
     );
   }
 }

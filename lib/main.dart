@@ -1,3 +1,4 @@
+import 'package:doctor_app/features/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,9 @@ class DoctorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Doctor App',
+      home: SplashScreen(),
     );
   }
 }
