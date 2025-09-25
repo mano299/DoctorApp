@@ -1,3 +1,4 @@
+import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -5,6 +6,19 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+        bottomNavigationBar: ConvexAppBar(
+      backgroundColor: Colors.white,
+      activeColor: Color(0xff0EBE7E),
+      color: Color(0xff858EA9),
+      curveSize: 0,
+      items: [
+        TabItem(icon: Icons.home),
+        TabItem(icon: Icons.favorite),
+        TabItem(icon: Icons.book),
+        TabItem(icon: Icons.message_rounded),
+      ],
+      onTap: (int i) => print('click index=$i'),
+    ));
   }
 }
