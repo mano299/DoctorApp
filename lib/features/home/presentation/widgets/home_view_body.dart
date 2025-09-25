@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/utils/app_images.dart';
+import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
@@ -9,23 +10,40 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      clipBehavior: Clip.none,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset(
-          Assets.assetsImagesSplashBg,
-          width: double.infinity,
-          height: double.infinity,
-          fit: BoxFit.cover,
+        Stack(
+          clipBehavior: Clip.none,
+          children: [
+            // Image.asset(
+            //   Assets.assetsImagesSplashBg,
+            //   width: double.infinity,
+            //   height: double.infinity,
+            //   fit: BoxFit.cover,
+            // ),
+            const CustomAppBar(),
+            Positioned(
+              bottom: -20,
+              left: 0,
+              right: 0,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: const CustomTextField(),
+              ),
+            ),
+          ],
         ),
-        CustomAppBar(),
-        Positioned(
-          top: 130,
-          left: 0,
-          right: 0,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: CustomTextField(),
+        const SizedBox(height: 50),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          child: Column(
+            children: [
+              Text(
+                'Live Doctors',
+                style: AppStyles.styleMedium18.copyWith(color: Colors.black),
+              ),
+            ],
           ),
         )
       ],
