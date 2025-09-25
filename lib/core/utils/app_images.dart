@@ -15,12 +15,12 @@ class Assets {
   /// Assets for assetsImagesOnBoardingPhoto2
   /// assets/images/on_boarding_photo2.svg
   static const String assetsImagesOnBoardingPhoto2 =
-      "assets/images/on_boarding_photo2.svg";
+      "assets/images/on_boarding_photo2.png";
 
   /// Assets for assetsImagesOnBoardingPhoto3
   /// assets/images/on_boarding_photo3.svg
   static const String assetsImagesOnBoardingPhoto3 =
-      "assets/images/on_boarding_photo3.svg";
+      "assets/images/on_boarding_photo3.png";
 
   /// Assets for assetsImagesSplashBg
   /// assets/images/splash_bg.svg
