@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
-
+  static const viewName = 'splahView';
   @override
   Widget build(BuildContext context) {
     return SplashScreenBody();

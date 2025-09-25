@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/utils/app_styles.dart';
+import 'package:doctor_app/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 class ButtonSection extends StatelessWidget {
@@ -19,17 +20,37 @@ class ButtonSection extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10))),
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 13.0),
-              child: Text(
-                'Get Started',
-                style: AppStyles.styleMedium18,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeView(),
+                    ),
+                  );
+                },
+                child: Text(
+                  'Get Started',
+                  style: AppStyles.styleMedium18,
+                ),
               ),
             ),
           ),
         ),
         SizedBox(height: 14),
-        Text(
-          'Skip',
-          style: AppStyles.styleRegular14,
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => HomeView(),
+              ),
+            );
+          },
+          child: Text(
+            'Skip',
+            style: AppStyles.styleRegular14,
+          ),
         )
       ],
     );
