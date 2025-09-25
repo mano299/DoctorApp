@@ -1,5 +1,6 @@
 import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
+import 'package:doctor_app/features/on_boarding/presentation/views/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -22,7 +23,14 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
     super.initState();
 
     initSlidingAnimation();
-    // homeViewNavigate();
+    Future.delayed(Duration(microseconds: 4), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => OnBoardingView(),
+        ),
+      );
+    });
   }
 
   @override
