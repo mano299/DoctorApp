@@ -1,3 +1,5 @@
+import 'package:doctor_app/core/utils/app_images.dart';
+import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -18,7 +20,17 @@ class CustomAppBar extends StatelessWidget {
           ],
         ),
       ),
-      child: ListTile(title: Text('data'),),
+      child: ListTile(
+        title: Text(
+          'Hi Handwerker!',
+          style: AppStyles.styleLight20,
+        ),
+        subtitle: Text(
+          'Find Your Doctor',
+          style: AppStyles.styleBold20,
+        ),
+        trailing: Image.asset(Assets.assetsImagesAppBarPhoto),
+      ),
     );
   }
 }
