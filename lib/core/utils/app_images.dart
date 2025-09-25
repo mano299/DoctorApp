@@ -5,7 +5,7 @@ class Assets {
   /// Assets for assetsImagesOnBoardingBg
   /// assets/images/onBoarding_bg.svg
   static const String assetsImagesOnBoardingBg =
-      "assets/images/onBoarding_bg.svg";
+      "assets/images/on_boarding_bg.png";
 
   /// Assets for assetsImagesOnBoardingPhoto1
   /// assets/images/on_boarding_photo1.svg

@@ -9,9 +9,5 @@ class OnBoardingView extends StatelessWidget {
     return Scaffold(
       body: OnBoardingViewBody(),
     );
-    PageView.builder(
-      itemCount: 3,
-      itemBuilder: (context, index) => Placeholder(),
-    );
   }
 }
