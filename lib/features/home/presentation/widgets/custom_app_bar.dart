@@ -20,16 +20,22 @@ class CustomAppBar extends StatelessWidget {
           ],
         ),
       ),
-      child: ListTile(
-        title: Text(
-          'Hi Handwerker!',
-          style: AppStyles.styleLight20,
-        ),
-        subtitle: Text(
-          'Find Your Doctor',
-          style: AppStyles.styleBold20,
-        ),
-        trailing: Image.asset(Assets.assetsImagesAppBarPhoto),
+      child: Column(
+        children: [
+          SizedBox(height: 50),
+          ListTile(
+            title: Text(
+              'Hi Handwerker!',
+              style: AppStyles.styleLight20,
+            ),
+            subtitle: Text(
+              'Find Your Doctor',
+              style: AppStyles.styleBold20,
+            ),
+            trailing: Image.asset(Assets.assetsImagesAppBarPhoto),
+          ),
+          SizedBox(height: 40),
+        ],
       ),
     );
   }

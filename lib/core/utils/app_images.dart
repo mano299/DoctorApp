@@ -2,9 +2,6 @@
 class Assets {
   Assets._();
   
-  /// Assets for assetsImages01Splash screen
-  /// assets/images/01_Splash screen.png
-
   /// Assets for assetsImagesAppBarPhoto
   /// assets/images/app_bar_photo.png
   static const String assetsImagesAppBarPhoto = "assets/images/app_bar_photo.png";
@@ -26,8 +23,8 @@ class Assets {
   static const String assetsImagesOnBoardingPhoto3 = "assets/images/on_boarding_photo3.png";
 
   /// Assets for assetsImagesSplashBg
-  /// assets/images/splash_bg.svg
-  static const String assetsImagesSplashBg = "assets/images/splash_bg.svg";
+  /// assets/images/splash_bg.png
+  static const String assetsImagesSplashBg = "assets/images/splash_bg.png";
 
   /// Assets for assetsImagesSplashLogo
   /// assets/images/splash_logo.svg

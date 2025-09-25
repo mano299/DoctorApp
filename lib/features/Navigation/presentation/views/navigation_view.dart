@@ -10,6 +10,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: ConvexAppBar(
+        elevation: 0,
         backgroundColor: Colors.white,
         activeColor: Color(0xff0EBE7E),
         color: Color(0xff858EA9),
