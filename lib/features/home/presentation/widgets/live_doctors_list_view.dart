@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class LiveDoctorsListView extends StatelessWidget {
   const LiveDoctorsListView({super.key});
   final List<LiveItem> items = const [
-    LiveItem(image: Assets.assetsImagesDoctorPhoto),
+    LiveItem(image: Assets.assetsImagesLiveDoctor),
     LiveItem(image: Assets.assetsImagesLiveDoctor2),
     LiveItem(image: Assets.assetsImagesLiveDoctor3),
   ];
@@ -16,7 +16,10 @@ class LiveDoctorsListView extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: items.length,
-        itemBuilder: (context, index) => items[index],
+        itemBuilder: (context, index) => Padding(
+          padding: const EdgeInsets.only(right: 15.0),
+          child: items[index],
+        ),
       ),
     );
   }

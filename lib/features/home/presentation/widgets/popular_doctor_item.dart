@@ -19,7 +19,7 @@ class PopularDoctorItem extends StatelessWidget {
         children: [
           ClipRRect(
             child: Image.asset(
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
               popularDoctorModel.image,
             ),
           ),
@@ -32,6 +32,7 @@ class PopularDoctorItem extends StatelessWidget {
             popularDoctorModel.descreption,
             style: AppStyles.styleLight12,
           ),
+          SizedBox(height: 6),
           DoctorRating(rating: popularDoctorModel.rating),
           SizedBox(height: 15),
         ],

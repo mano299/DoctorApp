@@ -8,6 +8,7 @@ import 'custom_text_field.dart';
 import 'illness_item_list_view.dart';
 import 'live_doctors_list_view.dart';
 import 'popular_doctor_item.dart';
+import 'popular_doctor_list_view.dart';
 import 'popular_doctors_header.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -52,13 +53,17 @@ class HomeViewBody extends StatelessWidget {
                   style: AppStyles.styleMedium18,
                 ),
                 LiveDoctorsListView(),
-                SizedBox(height: 42),
+                SizedBox(height: 40),
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.11,
                   child: IllnessItemListView(),
                 ),
                 PopularDoctorsHeader(),
-                // PopularDoctorItem(popularDoctorModel: PopularDoctorModel(image: Assets.assetsImagesPopularDoctor1, name: name, descreption: descreption, rating: rating),)
+                SizedBox(
+                  height: 280,
+                  child: PopularDoctorListView(),
+                ),
+                SizedBox(height: 24),
               ],
             ),
           ),

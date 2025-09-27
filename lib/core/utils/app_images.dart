@@ -10,10 +10,6 @@ class Assets {
   /// assets/images/body_icon.svg
   static const String assetsImagesBodyIcon = "assets/images/body_icon.svg";
 
-  /// Assets for assetsImagesDoctorPhoto
-  /// assets/images/doctor_photo.png
-  static const String assetsImagesDoctorPhoto = "assets/images/doctor_photo.png";
-
   /// Assets for assetsImagesEyeIcon
   /// assets/images/eye_icon.svg
   static const String assetsImagesEyeIcon = "assets/images/eye_icon.svg";
@@ -22,13 +18,17 @@ class Assets {
   /// assets/images/heart_icon.svg
   static const String assetsImagesHeartIcon = "assets/images/heart_icon.svg";
 
+  /// Assets for assetsImagesLiveDoctor
+  /// assets/images/live_doctor.jpg
+  static const String assetsImagesLiveDoctor = "assets/images/live_doctor.jpg";
+
   /// Assets for assetsImagesLiveDoctor2
-  /// assets/images/live_doctor_2.png
-  static const String assetsImagesLiveDoctor2 = "assets/images/live_doctor_2.png";
+  /// assets/images/live_doctor_2.jpg
+  static const String assetsImagesLiveDoctor2 = "assets/images/live_doctor_2.jpg";
 
   /// Assets for assetsImagesLiveDoctor3
-  /// assets/images/live_doctor_3.png
-  static const String assetsImagesLiveDoctor3 = "assets/images/live_doctor_3.png";
+  /// assets/images/live_doctor_3.jpg
+  static const String assetsImagesLiveDoctor3 = "assets/images/live_doctor_3.jpg";
 
   /// Assets for assetsImagesLiveRectangle
   /// assets/images/live_rectangle.png
