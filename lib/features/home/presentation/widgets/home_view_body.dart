@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/utils/app_styles.dart';
+import 'package:doctor_app/features/home/presentation/widgets/feature_doctor_list_view.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
@@ -65,6 +66,11 @@ class HomeViewBody extends StatelessWidget {
                 SizedBox(height: 32),
                 PopularDoctorsHeader(text: 'Feature Doctor'),
                 SizedBox(height: 22),
+                SizedBox(
+                  height: MediaQuery.sizeOf(context).height * 0.2,
+                  child: FeatureDoctorListView(),
+                ),
+                SizedBox(height: 20),
               ],
             ),
           ),

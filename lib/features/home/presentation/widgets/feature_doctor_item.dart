@@ -3,40 +3,56 @@ import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class FeatureDoctorItem extends StatelessWidget {
-  const FeatureDoctorItem({super.key});
-
+  const FeatureDoctorItem(
+      {super.key,
+      required this.image,
+      required this.name,
+      required this.rating,
+      required this.price});
+  final String image;
+  final String name;
+  final String rating;
+  final String price;
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.sizeOf(context).width * .3,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(6),
         color: Colors.white,
       ),
       child: Column(
         children: [
-          Row(
-            children: [
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.favorite_outline_outlined),
-              ),
-              Icon(
-                Icons.star,
-                color: Colors.amber,
-              ),
-              SizedBox(width: 6),
-              Text(
-                '3.7',
-                style: AppStyles.styleMedium10,
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.favorite_outline_outlined,
+                    size: 20,
+                  ),
+                ),
+                Spacer(),
+                Icon(
+                  Icons.star,
+                  color: Colors.amber,
+                ),
+                SizedBox(width: 6),
+                Text(
+                  rating,
+                  style: AppStyles.styleMedium10,
+                ),
+              ],
+            ),
           ),
           Image.asset(
-            Assets.assetsImagesFeatureDoctor1,
+            image,
           ),
           SizedBox(height: 10),
           Text(
-            'Dr. Crick',
+            name,
             style: AppStyles.styleMedium18,
           ),
           Row(
@@ -47,7 +63,7 @@ class FeatureDoctorItem extends StatelessWidget {
                 style: AppStyles.styleMedium10.copyWith(color: Colors.green),
               ),
               Text(
-                '25.00/ hours',
+                '$price.00/ hours',
                 style: AppStyles.styleLight12,
               )
             ],
