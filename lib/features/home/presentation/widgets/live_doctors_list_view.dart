@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/utils/app_images.dart';
+import 'package:doctor_app/features/home/presentation/views/live_view.dart';
 import 'package:doctor_app/features/home/presentation/widgets/live_item.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,16 @@ class LiveDoctorsListView extends StatelessWidget {
         itemCount: items.length,
         itemBuilder: (context, index) => Padding(
           padding: const EdgeInsets.only(right: 15.0),
-          child: items[index],
+          child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LiveView(),
+                  ),
+                );
+              },
+              child: items[index]),
         ),
       ),
     );

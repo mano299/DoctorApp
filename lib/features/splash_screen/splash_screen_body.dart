@@ -23,7 +23,7 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
     super.initState();
 
     initSlidingAnimation();
-    Future.delayed(Duration(seconds: 5), () {
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -70,12 +70,12 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
   void initSlidingAnimation() {
     textAnimationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 3),
+      duration: Duration(seconds: 2),
     );
 
     logoAnimationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 3),
+      duration: Duration(seconds: 2),
     );
 
     textSlidingAnimation = Tween<Offset>(

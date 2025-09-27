@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
 import 'custom_text_field.dart';
-import 'feature_doctor_item.dart';
 import 'illness_item_list_view.dart';
 import 'live_doctors_list_view.dart';
 import 'popular_doctor_list_view.dart';

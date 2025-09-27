@@ -1,8 +1,7 @@
-import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
-class FeatureDoctorItem extends StatelessWidget {
+class FeatureDoctorItem extends StatefulWidget {
   const FeatureDoctorItem(
       {super.key,
       required this.image,
@@ -13,6 +12,13 @@ class FeatureDoctorItem extends StatelessWidget {
   final String name;
   final String rating;
   final String price;
+
+  @override
+  State<FeatureDoctorItem> createState() => _FeatureDoctorItemState();
+}
+
+class _FeatureDoctorItemState extends State<FeatureDoctorItem> {
+  Color iconColor = Colors.grey;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,10 +34,20 @@ class FeatureDoctorItem extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    if (iconColor != Colors.red) {
+                      iconColor = Colors.red;
+                    } else {
+                      iconColor = Colors.grey;
+                    }
+                    setState(() {});
+                  },
                   icon: Icon(
-                    Icons.favorite_outline_outlined,
+                    iconColor == Colors.red
+                        ? Icons.favorite
+                        : Icons.favorite_border_rounded,
                     size: 20,
+                    color: iconColor,
                   ),
                 ),
                 Spacer(),
@@ -41,18 +57,18 @@ class FeatureDoctorItem extends StatelessWidget {
                 ),
                 SizedBox(width: 6),
                 Text(
-                  rating,
+                  widget.rating,
                   style: AppStyles.styleMedium10,
                 ),
               ],
             ),
           ),
           Image.asset(
-            image,
+            widget.image,
           ),
           SizedBox(height: 10),
           Text(
-            name,
+            widget.name,
             style: AppStyles.styleMedium18,
           ),
           Row(
@@ -63,7 +79,7 @@ class FeatureDoctorItem extends StatelessWidget {
                 style: AppStyles.styleMedium10.copyWith(color: Colors.green),
               ),
               Text(
-                '$price.00/ hours',
+                '${widget.price}.00/ hours',
                 style: AppStyles.styleLight12,
               )
             ],

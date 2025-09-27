@@ -1,5 +1,5 @@
 import 'package:doctor_app/core/utils/app_styles.dart';
-import 'package:doctor_app/features/data/models/popular_doctor_model.dart';
+import 'package:doctor_app/features/home/data/models/popular_doctor_model.dart';
 import 'package:flutter/material.dart';
 
 import 'doctor_rating.dart';

@@ -2,7 +2,7 @@ import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/features/home/presentation/widgets/popular_doctor_item.dart';
 import 'package:flutter/material.dart';
 
-import '../../../data/models/popular_doctor_model.dart';
+import '../../data/models/popular_doctor_model.dart';
 
 class PopularDoctorListView extends StatelessWidget {
   const PopularDoctorListView({super.key});
