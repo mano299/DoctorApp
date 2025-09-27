@@ -22,26 +22,23 @@ class ButtonSection extends StatelessWidget {
             width: double.infinity,
             height: 54,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomeView(),
+                  ),
+                );
+              },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xff0EBE7F),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10))),
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 13.0),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => HomeView(),
-                      ),
-                    );
-                  },
-                  child: Text(
-                    'Get Started',
-                    style: AppStyles.styleMedium18,
-                  ),
+                child: Text(
+                  'Get Started',
+                  style: AppStyles.styleMedium18,
                 ),
               ),
             ),

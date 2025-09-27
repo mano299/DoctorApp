@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
 import 'custom_text_field.dart';
+import 'live_item.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -43,6 +44,7 @@ class HomeViewBody extends StatelessWidget {
                 'Live Doctors',
                 style: AppStyles.styleMedium18.copyWith(color: Colors.black),
               ),
+              LiveItem(),
             ],
           ),
         )
