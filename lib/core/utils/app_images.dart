@@ -34,6 +34,10 @@ class Assets {
   /// assets/images/heart_icon.svg
   static const String assetsImagesHeartIcon = "assets/images/heart_icon.svg";
 
+  /// Assets for assetsImagesLiveChatComment
+  /// assets/images/live_chat_comment.png
+  static const String assetsImagesLiveChatComment = "assets/images/live_chat_comment.png";
+
   /// Assets for assetsImagesLiveDoctor
   /// assets/images/live_doctor.jpg
   static const String assetsImagesLiveDoctor = "assets/images/live_doctor.jpg";
