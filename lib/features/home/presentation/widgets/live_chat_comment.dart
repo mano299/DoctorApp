@@ -9,14 +9,14 @@ class LiveChatComment extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        child: Image.asset(Assets.assetsImagesLiveChatComment),
-      ),
+          radius: 25,
+          backgroundImage: AssetImage(Assets.assetsImagesLiveChatComment)),
       title: Text(
         'Mohamed Magdy',
         style: AppStyles.styleMedium18.copyWith(color: Colors.white),
       ),
       subtitle: Text(
-        'They treat immune system disorders',
+        'This is the largest directory ❤️',
         style:
             AppStyles.styleLight12.copyWith(fontSize: 14, color: Colors.white),
       ),

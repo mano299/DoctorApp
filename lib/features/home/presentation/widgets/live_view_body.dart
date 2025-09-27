@@ -2,6 +2,7 @@ import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 
 import 'live_chat_comment.dart';
+import 'live_chat_comments_list_view.dart';
 import 'live_chat_header.dart';
 import 'live_chat_menu.dart';
 
@@ -27,8 +28,9 @@ class LiveViewBody extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              LiveChatComment(),
-              SizedBox(height: 15),
+              SizedBox(
+                  height: MediaQuery.sizeOf(context).height * 0.4,
+                  child: LiveChatCommentsListView()),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: LiveChatMenu(),
