@@ -10,6 +10,14 @@ class Assets {
   /// assets/images/doctor_photo.png
   static const String assetsImagesDoctorPhoto = "assets/images/doctor_photo.png";
 
+  /// Assets for assetsImagesLiveDoctor2
+  /// assets/images/live_doctor_2.png
+  static const String assetsImagesLiveDoctor2 = "assets/images/live_doctor_2.png";
+
+  /// Assets for assetsImagesLiveDoctor3
+  /// assets/images/live_doctor_3.png
+  static const String assetsImagesLiveDoctor3 = "assets/images/live_doctor_3.png";
+
   /// Assets for assetsImagesLiveRectangle
   /// assets/images/live_rectangle.png
   static const String assetsImagesLiveRectangle = "assets/images/live_rectangle.png";
@@ -32,7 +40,7 @@ class Assets {
 
   /// Assets for assetsImagesPlayLiveIcon
   /// assets/images/play_live_icon.png
-  static const String assetsImagesPlayLiveIcon = "assets/images/play_live_icon.svg";
+  static const String assetsImagesPlayLiveIcon = "assets/images/play_live_icon.png";
 
   /// Assets for assetsImagesSplashBg
   /// assets/images/splash_bg.png

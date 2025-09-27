@@ -1,10 +1,9 @@
-import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
 import 'custom_text_field.dart';
-import 'live_item.dart';
+import 'live_doctors_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -12,7 +11,6 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Stack(
           clipBehavior: Clip.none,
@@ -39,12 +37,13 @@ class HomeViewBody extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 'Live Doctors',
                 style: AppStyles.styleMedium18.copyWith(color: Colors.black),
               ),
-              LiveItem(),
+              LiveDoctorsListView(),
             ],
           ),
         )
