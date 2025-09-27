@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/utils/app_images.dart';
+import 'package:doctor_app/core/widgets/pop_button.dart';
 import 'package:flutter/material.dart';
 
 class LiveChatHeader extends StatelessWidget {
@@ -10,20 +11,7 @@ class LiveChatHeader extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Row(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: Icon(
-                Icons.arrow_back_ios_new,
-              ),
-            ),
-          ),
+          PopButton(),
           Spacer(),
           CircleAvatar(
             maxRadius: 20,
