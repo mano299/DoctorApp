@@ -9,15 +9,19 @@ class IllnessItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 85,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
-        gradient: LinearGradient(colors: backgroundColors),
+        gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: backgroundColors ?? [Colors.blue, Colors.blueAccent]),
         boxShadow: [
           BoxShadow(
-            color: Color(0x14000000),
-            blurRadius: 30,
-            offset: Offset(0, 4),
-            spreadRadius: 2,
+            color: Color(0x3F000000),
+            blurRadius: 8,
+            offset: Offset(0, 6),
+            spreadRadius: 1,
           )
         ],
       ),
