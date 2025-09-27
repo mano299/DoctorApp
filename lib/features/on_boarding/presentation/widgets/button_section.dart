@@ -38,7 +38,7 @@ class ButtonSection extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 13.0),
                 child: Text(
                   'Get Started',
-                  style: AppStyles.styleMedium18,
+                  style: AppStyles.styleMedium18.copyWith(color: Colors.white),
                 ),
               ),
             ),

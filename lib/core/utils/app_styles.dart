@@ -23,7 +23,7 @@ abstract class AppStyles {
     fontSize: 18,
     fontWeight: FontWeight.w500,
     fontFamily: 'Rubik',
-    color: Colors.white,
+    color: Colors.black,
   );
   static TextStyle styleRegular14 = TextStyle(
     fontSize: 14,

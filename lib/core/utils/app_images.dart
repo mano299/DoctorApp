@@ -54,6 +54,14 @@ class Assets {
   /// assets/images/play_live_icon.png
   static const String assetsImagesPlayLiveIcon = "assets/images/play_live_icon.png";
 
+  /// Assets for assetsImagesPopularDoctor1
+  /// assets/images/popular_doctor1.png
+  static const String assetsImagesPopularDoctor1 = "assets/images/popular_doctor1.png";
+
+  /// Assets for assetsImagesPopularDoctor2
+  /// assets/images/popular_doctor2.png
+  static const String assetsImagesPopularDoctor2 = "assets/images/popular_doctor2.png";
+
   /// Assets for assetsImagesSplashBg
   /// assets/images/splash_bg.png
   static const String assetsImagesSplashBg = "assets/images/splash_bg.png";

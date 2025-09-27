@@ -11,7 +11,7 @@ class PopularDoctorsHeader extends StatelessWidget {
       children: [
         Text(
           'Popular Doctor',
-          style: AppStyles.styleMedium18.copyWith(color: Colors.black),
+          style: AppStyles.styleMedium18,
         ),
         TextButton(
           onPressed: () {},
