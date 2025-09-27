@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key});
-
+  const CustomTextField({super.key, required this.hintText});
+  final String hintText;
   @override
   Widget build(BuildContext context) {
     return TextField(
@@ -17,7 +17,7 @@ class CustomTextField extends StatelessWidget {
           Icons.close,
           color: Color(0xff677294),
         ),
-        hintText: 'Search...',
+        hintText: hintText,
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.white),
           borderRadius: BorderRadius.circular(6),

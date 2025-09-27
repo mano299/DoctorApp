@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/utils/app_images.dart';
+import 'package:doctor_app/features/find_doctors/presentation/views/find_doctors_view.dart';
 import 'package:doctor_app/features/home/presentation/widgets/illness_item.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +42,16 @@ class IllnessItemListView extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       itemBuilder: (context, index) => Padding(
         padding: const EdgeInsets.only(right: 16.0, bottom: 4),
-        child: items[index],
+        child: GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FindDoctorsView(),
+                ),
+              );
+            },
+            child: items[index]),
       ),
     );
   }

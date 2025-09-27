@@ -33,7 +33,9 @@ class HomeViewBody extends StatelessWidget {
                 right: 0,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: const CustomTextField(),
+                  child: const CustomTextField(
+                    hintText: 'Search...',
+                  ),
                 ),
               ),
             ],
