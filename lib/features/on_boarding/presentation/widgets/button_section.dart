@@ -14,7 +14,7 @@ class ButtonSection extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => HomeView(),
+                builder: (context) => NavigationView(),
               ),
             );
           },
@@ -26,7 +26,7 @@ class ButtonSection extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomeView(),
+                    builder: (context) => NavigationView(),
                   ),
                 );
               },
@@ -50,7 +50,7 @@ class ButtonSection extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => HomeView(),
+                builder: (context) => NavigationView(),
               ),
             );
           },

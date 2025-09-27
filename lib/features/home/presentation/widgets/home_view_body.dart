@@ -1,4 +1,6 @@
+import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
+import 'package:doctor_app/features/data/models/popular_doctor_model.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
@@ -56,7 +58,7 @@ class HomeViewBody extends StatelessWidget {
                   child: IllnessItemListView(),
                 ),
                 PopularDoctorsHeader(),
-                PopularDoctorItem()
+                // PopularDoctorItem(popularDoctorModel: PopularDoctorModel(image: Assets.assetsImagesPopularDoctor1, name: name, descreption: descreption, rating: rating),)
               ],
             ),
           ),

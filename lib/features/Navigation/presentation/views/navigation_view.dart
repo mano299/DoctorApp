@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../../../home/presentation/widgets/home_view_body.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class NavigationView extends StatelessWidget {
+  const NavigationView({super.key});
 
   @override
   Widget build(BuildContext context) {
