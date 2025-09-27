@@ -2,15 +2,15 @@ import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class PopularDoctorsHeader extends StatelessWidget {
-  const PopularDoctorsHeader({super.key});
-
+  const PopularDoctorsHeader({super.key, required this.text});
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          'Popular Doctor',
+          text,
           style: AppStyles.styleMedium18,
         ),
         TextButton(

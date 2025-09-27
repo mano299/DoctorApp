@@ -1,4 +1,3 @@
-import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:doctor_app/features/data/models/popular_doctor_model.dart';
 import 'package:flutter/material.dart';
