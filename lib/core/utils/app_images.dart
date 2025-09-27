@@ -6,9 +6,21 @@ class Assets {
   /// assets/images/app_bar_photo.png
   static const String assetsImagesAppBarPhoto = "assets/images/app_bar_photo.png";
 
+  /// Assets for assetsImagesBodyIcon
+  /// assets/images/body_icon.svg
+  static const String assetsImagesBodyIcon = "assets/images/body_icon.svg";
+
   /// Assets for assetsImagesDoctorPhoto
   /// assets/images/doctor_photo.png
   static const String assetsImagesDoctorPhoto = "assets/images/doctor_photo.png";
+
+  /// Assets for assetsImagesEyeIcon
+  /// assets/images/eye_icon.svg
+  static const String assetsImagesEyeIcon = "assets/images/eye_icon.svg";
+
+  /// Assets for assetsImagesHeartIcon
+  /// assets/images/heart_icon.svg
+  static const String assetsImagesHeartIcon = "assets/images/heart_icon.svg";
 
   /// Assets for assetsImagesLiveDoctor2
   /// assets/images/live_doctor_2.png
@@ -49,5 +61,9 @@ class Assets {
   /// Assets for assetsImagesSplashLogo
   /// assets/images/splash_logo.svg
   static const String assetsImagesSplashLogo = "assets/images/splash_logo.svg";
+
+  /// Assets for assetsImagesToothIcon
+  /// assets/images/tooth_icon.svg
+  static const String assetsImagesToothIcon = "assets/images/tooth_icon.svg";
 }
 

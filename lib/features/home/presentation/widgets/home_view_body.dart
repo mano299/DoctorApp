@@ -1,8 +1,10 @@
+import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
 import 'custom_text_field.dart';
+import 'illness_item.dart';
 import 'live_doctors_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -44,6 +46,11 @@ class HomeViewBody extends StatelessWidget {
                 style: AppStyles.styleMedium18.copyWith(color: Colors.black),
               ),
               LiveDoctorsListView(),
+              SizedBox(height: 48),
+              IllnessItem(
+                backgroundColors: [Colors.greenAccent, Colors.green],
+                icon: Assets.assetsImagesToothIcon,
+              ),
             ],
           ),
         )
