@@ -1,12 +1,11 @@
-import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
 import 'custom_text_field.dart';
-import 'illness_item.dart';
 import 'illness_item_list_view.dart';
 import 'live_doctors_list_view.dart';
+import 'popular_doctors_header.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -51,7 +50,8 @@ class HomeViewBody extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.sizeOf(context).height * 0.11,
                 child: IllnessItemListView(),
-              )
+              ),
+              PopularDoctorsHeader()
             ],
           ),
         )

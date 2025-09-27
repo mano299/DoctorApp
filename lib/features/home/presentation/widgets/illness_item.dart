@@ -15,13 +15,13 @@ class IllnessItem extends StatelessWidget {
         gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: backgroundColors ?? [Colors.blue, Colors.blueAccent]),
+            colors: backgroundColors),
         boxShadow: [
           BoxShadow(
             color: Color(0x3F000000),
-            blurRadius: 8,
-            offset: Offset(0, 6),
-            spreadRadius: 1,
+            blurRadius: 4,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
           )
         ],
       ),
