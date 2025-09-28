@@ -6,6 +6,8 @@ import 'package:doctor_app/features/home/presentation/widgets/popular_doctor_lis
 import 'package:doctor_app/features/popular_doctors/presentation/widgets/category_doctor_item.dart';
 import 'package:flutter/material.dart';
 
+import 'category_doctor_list_view.dart';
+
 class PopularDoctorsViewBody extends StatelessWidget {
   const PopularDoctorsViewBody({super.key});
 
@@ -47,10 +49,11 @@ class PopularDoctorsViewBody extends StatelessWidget {
                       'Category',
                       style: AppStyles.styleMedium18,
                     ),
-                    CategoryDoctorItem()
+                    SizedBox(height: 17),
                   ],
                 ),
               ),
+              CategoryDoctorListView(),
             ],
           ),
         )
