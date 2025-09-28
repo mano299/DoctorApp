@@ -3,7 +3,6 @@ import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:doctor_app/core/widgets/pop_button.dart';
 import 'package:doctor_app/features/home/presentation/widgets/custom_header.dart';
 import 'package:doctor_app/features/home/presentation/widgets/popular_doctor_list_view.dart';
-import 'package:doctor_app/features/popular_doctors/presentation/widgets/category_doctor_item.dart';
 import 'package:flutter/material.dart';
 
 import 'category_doctor_list_view.dart';
