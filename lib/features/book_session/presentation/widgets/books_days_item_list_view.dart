@@ -23,8 +23,8 @@ class _BooksDaysItemListViewState extends State<BooksDaysItemListView> {
             setState(() {});
           },
           child: BookDaysItem(
-            head: 'Today, 23 Feb',
-            sets: 0,
+            head: 'Tomorrow, 24 Feb',
+            sets: 12,
             isSelcted: currentIndex == index,
           ),
         ),

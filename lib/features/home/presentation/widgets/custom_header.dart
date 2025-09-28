@@ -2,8 +2,9 @@ import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class PopularDoctorsHeader extends StatelessWidget {
-  const PopularDoctorsHeader({super.key, required this.text});
+  const PopularDoctorsHeader({super.key, required this.text, this.onTap});
   final String text;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -14,7 +15,7 @@ class PopularDoctorsHeader extends StatelessWidget {
           style: AppStyles.styleMedium18,
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: onTap,
           child: Text(
             'See all >',
             style: AppStyles.styleLight12,

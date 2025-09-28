@@ -1,5 +1,6 @@
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:doctor_app/features/home/presentation/widgets/feature_doctor_list_view.dart';
+import 'package:doctor_app/features/popular_doctors/presentation/views/popular_doctors_view.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
@@ -59,7 +60,17 @@ class HomeViewBody extends StatelessWidget {
                   height: MediaQuery.sizeOf(context).height * 0.11,
                   child: IllnessItemListView(),
                 ),
-                PopularDoctorsHeader(text: 'Popular Doctor'),
+                PopularDoctorsHeader(
+                  text: 'Popular Doctor',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PopularDoctorsView(),
+                      ),
+                    );
+                  },
+                ),
                 SizedBox(
                   height: 280,
                   child: PopularDoctorListView(),

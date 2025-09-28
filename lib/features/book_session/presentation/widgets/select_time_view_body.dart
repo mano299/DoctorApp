@@ -1,6 +1,5 @@
 import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/features/book_session/presentation/widgets/available_slots_section.dart';
-import 'package:doctor_app/features/book_session/presentation/widgets/book_days_item.dart';
 import 'package:doctor_app/features/book_session/presentation/widgets/books_days_item_list_view.dart';
 import 'package:doctor_app/features/book_session/presentation/widgets/doctor_book_card.dart';
 import 'package:flutter/material.dart';
@@ -8,9 +7,15 @@ import 'package:flutter/material.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../core/widgets/PagesHeader.dart';
 
-class SelectTimeViewBody extends StatelessWidget {
+class SelectTimeViewBody extends StatefulWidget {
   const SelectTimeViewBody({super.key});
 
+  @override
+  State<SelectTimeViewBody> createState() => _SelectTimeViewBodyState();
+}
+
+class _SelectTimeViewBodyState extends State<SelectTimeViewBody> {
+  bool showSlots = false;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -24,32 +29,43 @@ class SelectTimeViewBody extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
             children: [
-              SizedBox(height: 50),
+              SizedBox(height: 60),
               PagesHeader(text: 'Select Time'),
               SizedBox(height: 34),
               DoctorBookCard(),
               SizedBox(height: 24),
               SizedBox(
                 height: MediaQuery.sizeOf(context).height * 0.07,
-                child: BooksDaysItemListView(),
+                child: GestureDetector(
+                    onTap: () {
+                      showSlots = true;
+                      setState(() {});
+                    },
+                    child: BooksDaysItemListView()),
               ),
               SizedBox(height: 20),
-              Text(
-                'Today, 23 Feb',
-                style: AppStyles.styleMedium18.copyWith(
-                  fontSize: 16,
-                ),
-              ),
-              SizedBox(height: 35),
-              AvailableSlotsSection(
-                text: 'Afternoon 7 slots',
-                itemCount: 7,
-              ),
-              SizedBox(height: 8),
-              AvailableSlotsSection(
-                text: 'Evening 5 slots',
-                itemCount: 5,
-              )
+              showSlots
+                  ? Column(
+                      children: [
+                        Text(
+                          'Tomorrow, 24 Feb',
+                          style: AppStyles.styleMedium18.copyWith(
+                            fontSize: 16,
+                          ),
+                        ),
+                        SizedBox(height: 35),
+                        AvailableSlotsSection(
+                          text: 'Afternoon 7 slots',
+                          itemCount: 7,
+                        ),
+                        SizedBox(height: 8),
+                        AvailableSlotsSection(
+                          text: 'Evening 5 slots',
+                          itemCount: 5,
+                        )
+                      ],
+                    )
+                  : SizedBox(),
             ],
           ),
         )
