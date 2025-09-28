@@ -67,4 +67,10 @@ abstract class AppStyles {
     fontFamily: 'Rubik',
     color: Color(0xff677294),
   );
+  static TextStyle styleLight10 = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w300,
+    fontFamily: 'Rubik',
+    color: Color(0xff677294),
+  );
 }

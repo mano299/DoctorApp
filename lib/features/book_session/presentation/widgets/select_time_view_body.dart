@@ -1,5 +1,6 @@
 import 'package:doctor_app/core/utils/app_images.dart';
-import 'package:doctor_app/features/book_session.dart/presentation/widgets/doctor_book_card.dart';
+import 'package:doctor_app/features/book_session/presentation/widgets/book_days_item.dart';
+import 'package:doctor_app/features/book_session/presentation/widgets/doctor_book_card.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/widgets/PagesHeader.dart';
@@ -24,7 +25,15 @@ class SelectTimeViewBody extends StatelessWidget {
               child: PagesHeader(text: 'Select Time'),
             ),
             SizedBox(height: 34),
-            DoctorBookCard()
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: DoctorBookCard(),
+            ),
+            SizedBox(height: 24),
+            BookDaysItem(
+              head: 'Today, 23 Feb',
+              sets: 0,
+            ),
           ],
         )
       ],

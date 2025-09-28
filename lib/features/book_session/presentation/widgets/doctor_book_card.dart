@@ -37,7 +37,7 @@ class DoctorBookCard extends StatelessWidget {
                       'Dr. Shruti Kedia',
                       style: AppStyles.styleMedium18.copyWith(fontSize: 16),
                     ),
-                    SizedBox(width: 120),
+                    SizedBox(width: 70),
                     Icon(Icons.favorite_border_outlined),
                   ],
                 ),

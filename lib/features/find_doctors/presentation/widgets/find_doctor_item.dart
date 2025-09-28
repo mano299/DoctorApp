@@ -2,7 +2,7 @@ import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
-import '../../../book_session.dart/presentation/views/select_time_view.dart';
+import '../../../book_session/presentation/views/select_time_view.dart';
 import 'doctor_percentage.dart';
 
 class FindDoctorItem extends StatelessWidget {
