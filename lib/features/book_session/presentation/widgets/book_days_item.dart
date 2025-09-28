@@ -2,9 +2,15 @@ import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class BookDaysItem extends StatefulWidget {
-  const BookDaysItem({super.key, required this.head, required this.sets});
+  const BookDaysItem(
+      {super.key,
+      required this.head,
+      required this.sets,
+      this.isSelcted = false});
   final String head;
   final int sets;
+  final bool isSelcted;
+
   @override
   State<BookDaysItem> createState() => _BookDaysItemState();
 }
@@ -12,14 +18,13 @@ class BookDaysItem extends StatefulWidget {
 class _BookDaysItemState extends State<BookDaysItem> {
   Color backColor = Colors.transparent;
   Color textColor = Colors.black;
-  bool isSelcted = false;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: backColor,
-        borderRadius: BorderRadius.circular(4),
-        border: !isSelcted
+        color: widget.isSelcted ? Color(0xff0EBE7F) : backColor,
+        borderRadius: BorderRadius.circular(6),
+        border: !widget.isSelcted
             ? Border.all(
                 color: Color(0xff677294),
                 width: 0.5,
@@ -32,12 +37,14 @@ class _BookDaysItemState extends State<BookDaysItem> {
           children: [
             Text(
               widget.head,
-              style: AppStyles.styleMedium18
-                  .copyWith(fontSize: 16, color: textColor),
+              style: AppStyles.styleMedium18.copyWith(
+                  fontSize: 16,
+                  color: widget.isSelcted ? Colors.white : textColor),
             ),
             Text(
               '${widget.head} slots available',
-              style: AppStyles.styleLight10,
+              style: AppStyles.styleLight10
+                  .copyWith(color: widget.isSelcted ? Colors.white : textColor),
             ),
           ],
         ),
