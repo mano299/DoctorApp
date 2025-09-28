@@ -2,6 +2,7 @@ import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
+import '../../../book_session.dart/presentation/views/select_time_view.dart';
 import 'doctor_percentage.dart';
 
 class FindDoctorItem extends StatelessWidget {
@@ -84,18 +85,25 @@ class FindDoctorItem extends StatelessWidget {
                   ],
                 ),
                 ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xff0EBE7F),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
-                      ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xff0EBE7F),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    onPressed: () {},
-                    child: Text(
-                      'Book Now',
-                      style:
-                          AppStyles.styleMedium12.copyWith(color: Colors.white),
-                    ))
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SelectTimeView(),
+                        ));
+                  },
+                  child: Text(
+                    'Book Now',
+                    style:
+                        AppStyles.styleMedium12.copyWith(color: Colors.white),
+                  ),
+                ),
               ],
             )
           ],

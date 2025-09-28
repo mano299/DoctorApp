@@ -4,7 +4,7 @@ import 'package:doctor_app/core/widgets/pop_button.dart';
 import 'package:doctor_app/features/home/presentation/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
-import 'find_doctor_item.dart';
+import 'find_doctors_list_view.dart';
 
 class FindDoctorsViewBody extends StatelessWidget {
   const FindDoctorsViewBody({super.key});
@@ -39,10 +39,10 @@ class FindDoctorsViewBody extends StatelessWidget {
                     SizedBox(height: 34),
                     CustomTextField(hintText: 'Dentist'),
                     SizedBox(height: 24),
-                    FindDoctorItem()
                   ],
                 ),
               ),
+              FindDoctorsListView(),
             ],
           ),
         ),
