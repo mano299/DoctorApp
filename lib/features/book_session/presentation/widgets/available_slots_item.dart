@@ -17,8 +17,9 @@ class AvailableSlotsItem extends StatelessWidget {
       child: Center(
         child: Text(
           '$hour:00 PM',
-          style: AppStyles.styleMedium12
-              .copyWith(fontSize: 13, color: isSelected ? Colors.white : null),
+          style: AppStyles.styleMedium12.copyWith(
+              fontSize: 13,
+              color: isSelected ? Colors.white : Color(0xff0EBE7F)),
         ),
       ),
     );

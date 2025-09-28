@@ -2,8 +2,8 @@ import 'package:doctor_app/features/book_session/presentation/widgets/available_
 import 'package:flutter/material.dart';
 
 class AvailableSlotsGridView extends StatefulWidget {
-  const AvailableSlotsGridView({super.key});
-
+  const AvailableSlotsGridView({super.key, required this.itemCount});
+  final int itemCount;
   @override
   State<AvailableSlotsGridView> createState() => _AvailableSlotsGridViewState();
 }
@@ -13,7 +13,7 @@ class _AvailableSlotsGridViewState extends State<AvailableSlotsGridView> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: 7,
+      itemCount: widget.itemCount,
       padding: EdgeInsets.zero,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 4,

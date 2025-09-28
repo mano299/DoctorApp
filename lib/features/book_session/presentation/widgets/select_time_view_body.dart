@@ -41,7 +41,15 @@ class SelectTimeViewBody extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 35),
-              AvailableSlotsSection()
+              AvailableSlotsSection(
+                text: 'Afternoon 7 slots',
+                itemCount: 7,
+              ),
+              SizedBox(height: 8),
+              AvailableSlotsSection(
+                text: 'Evening 5 slots',
+                itemCount: 5,
+              )
             ],
           ),
         )
