@@ -60,7 +60,7 @@ class HomeViewBody extends StatelessWidget {
                   height: MediaQuery.sizeOf(context).height * 0.11,
                   child: IllnessItemListView(),
                 ),
-                PopularDoctorsHeader(
+                CustomHeader(
                   text: 'Popular Doctor',
                   onTap: () {
                     Navigator.push(
@@ -76,7 +76,7 @@ class HomeViewBody extends StatelessWidget {
                   child: PopularDoctorListView(),
                 ),
                 SizedBox(height: 32),
-                PopularDoctorsHeader(text: 'Feature Doctor'),
+                CustomHeader(text: 'Feature Doctor'),
                 SizedBox(height: 22),
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.2,

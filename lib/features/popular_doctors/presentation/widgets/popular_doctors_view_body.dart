@@ -39,7 +39,7 @@ class PopularDoctorsViewBody extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 30),
-                    PopularDoctorsHeader(text: "Popular Doctor"),
+                    CustomHeader(text: "Popular Doctor"),
                     SizedBox(
                       height: MediaQuery.sizeOf(context).height * 0.32,
                       child: PopularDoctorListView(),
