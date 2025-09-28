@@ -10,6 +10,14 @@ class Assets {
   /// assets/images/body_icon.svg
   static const String assetsImagesBodyIcon = "assets/images/body_icon.svg";
 
+  /// Assets for assetsImagesCategoryDoctor1
+  /// assets/images/category_doctor_1.png
+  static const String assetsImagesCategoryDoctor1 = "assets/images/category_doctor_1.png";
+
+  /// Assets for assetsImagesCategoryDoctor2
+  /// assets/images/category_doctor_2.png
+  static const String assetsImagesCategoryDoctor2 = "assets/images/category_doctor_2.png";
+
   /// Assets for assetsImagesDoctorCard1
   /// assets/images/doctor_card1.png
   static const String assetsImagesDoctorCard1 = "assets/images/doctor_card1.png";

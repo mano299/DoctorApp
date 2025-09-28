@@ -13,6 +13,14 @@ class PopularDoctorItem extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Color(0x14000000),
+            blurRadius: 40,
+            offset: Offset(0, 0),
+            spreadRadius: 0,
+          )
+        ],
       ),
       child: Column(
         children: [
