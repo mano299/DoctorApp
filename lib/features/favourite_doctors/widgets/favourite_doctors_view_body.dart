@@ -1,5 +1,8 @@
 import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/widgets/PagesHeader.dart';
+import 'package:doctor_app/features/favourite_doctors/data/models/favourite_doctor_model.dart';
+import 'package:doctor_app/features/favourite_doctors/widgets/favourite_doctor_item.dart';
+import 'package:doctor_app/features/home/presentation/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class FavouriteDoctorsViewBody extends StatelessWidget {
@@ -20,6 +23,16 @@ class FavouriteDoctorsViewBody extends StatelessWidget {
             children: [
               SizedBox(height: 60),
               PagesHeader(text: 'Favourite Doctors'),
+              SizedBox(height: 38),
+              CustomTextField(hintText: 'Dentist'),
+              SizedBox(height: 24),
+              FavouriteDoctorItem(
+                favouriteDoctor: FavouriteDoctorModel(
+                  image: Assets.assetsImagesPopularDoctor1,
+                  name: 'Dr. Shouey',
+                  job: 'Specalist Cardiology',
+                ),
+              )
             ],
           ),
         )
