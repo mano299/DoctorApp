@@ -1,9 +1,11 @@
 import 'package:doctor_app/core/utils/app_images.dart';
+import 'package:doctor_app/features/book_session/presentation/widgets/available_slots_section.dart';
 import 'package:doctor_app/features/book_session/presentation/widgets/book_days_item.dart';
 import 'package:doctor_app/features/book_session/presentation/widgets/books_days_item_list_view.dart';
 import 'package:doctor_app/features/book_session/presentation/widgets/doctor_book_card.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/app_styles.dart';
 import '../../../../core/widgets/PagesHeader.dart';
 
 class SelectTimeViewBody extends StatelessWidget {
@@ -28,8 +30,18 @@ class SelectTimeViewBody extends StatelessWidget {
               DoctorBookCard(),
               SizedBox(height: 24),
               SizedBox(
-                  height: MediaQuery.sizeOf(context).height * 0.07,
-                  child: BooksDaysItemListView())
+                height: MediaQuery.sizeOf(context).height * 0.07,
+                child: BooksDaysItemListView(),
+              ),
+              SizedBox(height: 20),
+              Text(
+                'Today, 23 Feb',
+                style: AppStyles.styleMedium18.copyWith(
+                  fontSize: 16,
+                ),
+              ),
+              SizedBox(height: 35),
+              AvailableSlotsSection()
             ],
           ),
         )

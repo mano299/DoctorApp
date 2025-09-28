@@ -1,0 +1,34 @@
+import 'package:doctor_app/features/book_session/presentation/widgets/available_slots_item.dart';
+import 'package:flutter/material.dart';
+
+class AvailableSlotsGridView extends StatefulWidget {
+  const AvailableSlotsGridView({super.key});
+
+  @override
+  State<AvailableSlotsGridView> createState() => _AvailableSlotsGridViewState();
+}
+
+class _AvailableSlotsGridViewState extends State<AvailableSlotsGridView> {
+  int currentIndex = 0;
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      itemCount: 7,
+      padding: EdgeInsets.zero,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 4,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
+        childAspectRatio: 1.6,
+      ),
+      itemBuilder: (context, index) => GestureDetector(
+        onTap: () {
+          currentIndex = index;
+          setState(() {});
+        },
+        child: AvailableSlotsItem(
+            hour: ++index, isSelected: currentIndex == index),
+      ),
+    );
+  }
+}

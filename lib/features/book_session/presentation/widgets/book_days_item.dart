@@ -42,7 +42,7 @@ class _BookDaysItemState extends State<BookDaysItem> {
                   color: widget.isSelcted ? Colors.white : textColor),
             ),
             Text(
-              '${widget.head} slots available',
+              '${widget.sets} slots available',
               style: AppStyles.styleLight10
                   .copyWith(color: widget.isSelcted ? Colors.white : textColor),
             ),
