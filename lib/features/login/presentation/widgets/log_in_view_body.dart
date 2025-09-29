@@ -83,6 +83,10 @@ class LogInViewBody extends StatelessWidget {
                       TextButton(
                         onPressed: () {
                           showBottomSheet(
+                            backgroundColor: Colors.white,
+                            constraints: BoxConstraints(
+                                maxHeight:
+                                    MediaQuery.sizeOf(context).height * 0.5),
                             context: context,
                             builder: (context) => OtpBottomSheet(),
                           );
