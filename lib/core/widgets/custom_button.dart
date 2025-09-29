@@ -7,7 +7,8 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
     required this.text,
-    this.ontap, this.bgColor,
+    this.ontap,
+    this.bgColor,
   });
   final String text;
   final void Function()? ontap;
@@ -17,9 +18,11 @@ class CustomButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: ontap,
       style: ElevatedButton.styleFrom(
-          backgroundColor: bgColor ?? Color(0xff0EBE7F),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)))
+          .copyWith(
+              backgroundColor: WidgetStateColor.fromMap(
+                  {WidgetState.any: Color(0xff0EBE7F)})),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 13.0),
         child: Text(
