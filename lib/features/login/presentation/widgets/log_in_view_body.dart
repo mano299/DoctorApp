@@ -3,7 +3,9 @@ import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:doctor_app/core/widgets/custom_button.dart';
 import 'package:doctor_app/features/Navigation/presentation/views/navigation_view.dart';
 import 'package:doctor_app/features/login/presentation/widgets/custom_login_header.dart';
+import 'package:doctor_app/features/login/presentation/widgets/otp_bottom_sheet.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 
 import '../../../../core/widgets/transparent_text_field.dart';
 import 'custom_platform_button.dart';
@@ -80,11 +82,9 @@ class LogInViewBody extends StatelessWidget {
                       const SizedBox(height: 17),
                       TextButton(
                         onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => NavigationView(),
-                            ),
+                          showBottomSheet(
+                            context: context,
+                            builder: (context) => OtpBottomSheet(),
                           );
                         },
                         child: Text(
