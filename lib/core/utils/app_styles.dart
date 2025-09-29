@@ -19,6 +19,12 @@ abstract class AppStyles {
     fontFamily: 'Rubik',
     color: Colors.black,
   );
+  static TextStyle styleMedium24 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Rubik',
+    color: Colors.black,
+  );
   static TextStyle styleMedium18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w500,
