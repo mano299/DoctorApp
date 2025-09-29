@@ -1,6 +1,7 @@
 import 'package:doctor_app/core/utils/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:doctor_app/core/widgets/custom_button.dart';
+import 'package:doctor_app/features/login/presentation/views/log_in_view.dart';
 import 'package:doctor_app/features/login/presentation/widgets/custom_login_header.dart';
 import 'package:doctor_app/features/login/presentation/widgets/custom_platform_button.dart';
 import 'package:doctor_app/features/login/presentation/widgets/i_agree_line.dart';
@@ -69,7 +70,14 @@ class SignUpViewBody extends StatelessWidget {
                       ),
                       const SizedBox(height: 17),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => LogInView(),
+                            ),
+                          );
+                        },
                         child: Text(
                           'Have an account? Log in',
                           style: AppStyles.styleRegular14
