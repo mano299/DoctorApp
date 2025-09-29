@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/utils/app_styles.dart';
+import 'package:doctor_app/core/widgets/custom_dot.dart';
 import 'package:flutter/material.dart';
 
 class DoctorPercentage extends StatelessWidget {
@@ -8,14 +9,7 @@ class DoctorPercentage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          width: 10,
-          height: 10,
-          decoration: ShapeDecoration(
-            color: const Color(0xFF0EBE7F),
-            shape: OvalBorder(),
-          ),
-        ),
+        CustomDot(color: Color(0xFF0EBE7F)),
         SizedBox(width: 4),
         Text(
           text,
@@ -25,3 +19,4 @@ class DoctorPercentage extends StatelessWidget {
     );
   }
 }
+
