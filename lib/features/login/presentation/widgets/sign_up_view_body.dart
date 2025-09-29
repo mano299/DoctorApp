@@ -56,10 +56,10 @@ class SignUpViewBody extends StatelessWidget {
                             RegisterTextFieldsSection(),
                             const SizedBox(height: 14),
                             IAgreeLine(),
-                            SizedBox(height: keyboardHeight > 0 ? 40 : 20),
                           ],
                         ),
                       ),
+                      SizedBox(height: keyboardHeight > 0 ? 20 : 30),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20.0),
                         child: SizedBox(
