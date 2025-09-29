@@ -4,6 +4,7 @@ import 'package:doctor_app/core/widgets/custom_button.dart';
 import 'package:doctor_app/core/widgets/custom_dot.dart';
 import 'package:doctor_app/features/Navigation/presentation/views/navigation_view.dart';
 import 'package:doctor_app/features/login/presentation/widgets/custom_login_header.dart';
+import 'package:doctor_app/features/login/presentation/widgets/custom_platform_button.dart';
 import 'package:flutter/material.dart';
 
 class SignUpViewBody extends StatelessWidget {
@@ -27,6 +28,14 @@ class SignUpViewBody extends StatelessWidget {
               scholarship for abroad studies""",
             ),
             SizedBox(height: 67),
+            Row(
+              children: [
+                CustomPlatformButton(
+                  text: 'Google',
+                  image: Assets.assetsImagesGoogleIcon,
+                ),
+              ],
+            )
           ],
         ),
       ],
