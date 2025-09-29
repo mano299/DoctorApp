@@ -19,7 +19,7 @@ class CustomButton extends StatelessWidget {
       onPressed: ontap,
       style: ElevatedButton.styleFrom(
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)))
+                  borderRadius: BorderRadius.circular(12)))
           .copyWith(
               backgroundColor: WidgetStateColor.fromMap(
                   {WidgetState.any: Color(0xff0EBE7F)})),
