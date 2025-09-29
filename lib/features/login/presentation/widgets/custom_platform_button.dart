@@ -15,29 +15,36 @@ class CustomPlatformButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: ontap,
-      style: ButtonStyle(
-        elevation: WidgetStateProperty.all(8),
-        shadowColor: WidgetStateProperty.all(Colors.black.withOpacity(0.4)),
-        backgroundColor: WidgetStateProperty.all(Colors.white),
-        surfaceTintColor: WidgetStateProperty.all(Colors.transparent),
-        shape: WidgetStateProperty.all(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+    return Expanded(
+      child: ElevatedButton(
+        onPressed: ontap,
+        style: ButtonStyle(
+          elevation: WidgetStateProperty.all(12),
+          shadowColor: WidgetStateProperty.all(Colors.black.withOpacity(0.5)),
+          backgroundColor: WidgetStateProperty.all(Colors.white),
+          surfaceTintColor: WidgetStateProperty.all(Colors.transparent),
+          shape: WidgetStateProperty.all(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
           ),
         ),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SvgPicture.asset(image),
-          const SizedBox(width: 8),
-          Text(
-            text,
-            style: AppStyles.styleLight16,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 16.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset(
+                image,
+              ),
+              const SizedBox(width: 12),
+              Text(
+                text,
+                style: AppStyles.styleLight16,
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
